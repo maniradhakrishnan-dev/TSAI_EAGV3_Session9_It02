@@ -1,0 +1,93 @@
+mani_radhakrishnan@searchpad:~/TSAI_EAGV3_Session9_It02/S9SharedCode/code$ uv run flow.py "compare three laptops under 70000 ,and present me with three options including key details like brand,hard disk,ram,processor  ,you browser to search in 
+amazon to findout"
+Using CPython 3.12.13
+Creating virtual environment at: .venv
+Installed 123 packages in 282ms
+
+══════════════════════════════════════════════════════════════════════════════
+session s8-fcb6ba4e  ─  query: compare three laptops under 70000 ,and present me with three options including key details like brand,hard disk,ram,processor  ,you browser to search in amazon to findout
+══════════════════════════════════════════════════════════════════════════════
+[n:1] planner            complete (5.9s)
+[n:2] browser            complete (20.8s)
+[n:3] distiller          complete (3.0s)
+[n:5] critic             complete (0.5s)
+  ↪ critic-fail recovery: planner node n:6 for n:3
+[n:6] planner            complete (25.8s)
+[n:7] browser            complete (58.5s)
+[n:8] distiller          complete (14.9s)
+[n:9] critic             complete (0.4s)
+  ↪ critic-fail recovery: planner node n:11 for n:8
+[n:11] planner            complete (4.3s)
+[n:12] browser            complete (39.2s)
+[n:13] distiller          complete (3.4s)
+[n:14] critic             complete (0.4s)
+[n:15] formatter          complete (3.6s)
+
+══════════════════════════════════════════════════════════════════════════════
+FINAL: Here are three laptop options under ₹70,000 based on current market availability:
+
+1. ASUS Vivobook 16: Features an AMD Ryzen 5 5600H processor, 16GB RAM, and a 512GB SSD.
+2. Acer Swift Lite: Equipped with an Intel Core i5-1235U processor, 16GB RAM, and a 512GB SSD.
+3. HP Laptop 15s: Powered by an Intel Core i5-1235U processor, 8GB RAM, and a 512GB SSD.
+
+These models offer a balance of performance and storage suitable for general productivity and multitasking within your specified budget.
+══════════════════════════════════════════════════════════════════════════════
+
+mani_radhakrishnan@searchpad:~/TSAI_EAGV3_Session9_It02/S9SharedCode/code$ uv run flow.py "compare three laptops under 100000 ,
+and present me with three options including key details like brand,hard disk,ram,processor  ,you browser to search in amazon to
+ findout"
+
+══════════════════════════════════════════════════════════════════════════════
+session s8-3c950bad  ─  query: compare three laptops under 100000 ,and present me with three options including key details like brand,hard disk,ram,processor  ,you browser to search in amazon to findout
+══════════════════════════════════════════════════════════════════════════════
+[memory.read] 1 hit(s) visible to every skill this run
+[n:1] planner            complete (9.7s)
+[n:2] browser            complete (32.5s)
+[n:3] distiller          complete (2.3s)
+[n:5] critic             complete (0.7s)
+  ↪ critic-fail recovery: planner node n:6 for n:3
+[n:6] planner            complete (14.4s)
+[n:7] browser            complete (104.9s)
+[n:8] browser            complete (44.6s)
+[n:9] browser            complete (61.5s)
+[n:10] distiller          complete (1.9s)
+[n:12] critic             complete (0.7s)
+  ↪ critic-fail recovery: planner node n:13 for n:10
+[n:13] planner            complete (16.0s)
+[n:14] browser            complete (43.9s)
+[n:15] distiller          complete (1.7s)
+[n:17] critic             complete (0.5s)
+  ↪ critic-fail recovery: planner node n:18 for n:15
+[n:18] planner            complete (18.6s)
+[n:19] browser            complete (113.4s)
+[n:20] browser            complete (65.6s)
+[n:21] browser            complete (97.1s)
+[n:22] distiller          complete (12.4s)
+[n:24] critic             complete (0.6s)
+  ↪ critic-fail recovery: planner node n:25 for n:22
+[n:25] planner            complete (2.9s)
+[n:26] browser            complete (34.9s)
+[n:27] browser            complete (48.1s)
+[n:28] browser            complete (40.4s)
+[n:29] distiller          complete (10.9s)
+[n:30] critic             complete (0.6s)
+  ↪ critic-fail recovery: planner node n:32 for n:29
+[n:32] planner            complete (5.1s)
+[n:33] browser            complete (55.4s)
+[n:34] distiller          complete (2.2s)
+[n:35] critic             complete (0.5s)
+  ↪ critic-fail recovery: planner node n:37 for n:34
+[n:37] planner            complete (4.5s)
+[n:38] browser            complete (20.4s)
+[n:39] distiller          complete (2.5s)
+[n:40] critic             complete (0.3s)
+[n:41] formatter          complete (3.5s)
+
+══════════════════════════════════════════════════════════════════════════════
+FINAL: Here are three laptop options currently available under 100,000 INR, featuring strong performance specifications:
+
+1. Apple MacBook Air (M2 Chip): Features an 8-core CPU, 8GB RAM, and a 256GB SSD. It is highly regarded for its build quality and battery efficiency.
+
+2. ASUS Vivobook Pro 15: Equipped with an AMD Ryzen 7 or Intel Core i7 processor, 16GB RAM, and a 512GB SSD. This model is excellent for multitasking and creative work.
+
+3. HP Pavilion 15: Powered by an Intel Core i5 (13th Gen) processor, 16GB RAM, and a 512GB SSD. It offers a balanced performance for both professional tasks and dai
