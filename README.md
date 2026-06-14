@@ -246,6 +246,7 @@ class BrowserOutput(BaseModel):
 ---
 ## Working Video
 https://youtu.be/DjODk-rg4fY
+https://youtu.be/neKu3UCUnOA
 
 ## 📝 License
 
